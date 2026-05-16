@@ -81,9 +81,22 @@ export default function Footer() {
           <p className="font-sans text-xs text-silver-slate/60">
             © {year} Ladzo Limited. All rights reserved. Registered in England & Wales.
           </p>
-          <p className="font-sans text-xs text-silver-slate/60">
-            Unit 6, 160 Eltham Hill, London SE9 5EA
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
+            <p className="font-sans text-xs text-silver-slate/60">
+              Unit 6, 160 Eltham Hill, London SE9 5EA
+            </p>
+            <p className="font-sans text-xs text-silver-slate/40">
+              Built by{' '}
+              <a
+                href="https://www.kambyte.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-silver-slate/60 hover:text-gold transition-colors duration-200"
+              >
+                Kambyte SRL
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
