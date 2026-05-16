@@ -25,11 +25,29 @@ const dmMono = DM_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Ladzo Limited — Global Business Consulting',
+  metadataBase: new URL('https://ladzolimited.com'),
+  title: {
+    default: 'Ladzo Limited — Global Business Consulting',
+    template: '%s | Ladzo Limited',
+  },
   description:
-    'Strategic consulting across Textile, Horeca, Cosmetics and E-commerce in 6 countries. First consultation free.',
+    'Strategic business consulting across Textile, Horeca, Cosmetics and E-commerce. Operating in 6 countries. First consultation free.',
+  keywords: [
+    'business consulting',
+    'global consulting',
+    'textile consulting',
+    'horeca consulting',
+    'cosmetics consulting',
+    'e-commerce consulting',
+    'UK consulting firm',
+    'Eastern Europe business',
+    'international market entry',
+    'Ladzo Limited',
+  ],
+  authors: [{ name: 'Ladzo Limited', url: 'https://ladzolimited.com' }],
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
-    title: 'Ladzo Limited',
+    title: 'Ladzo Limited — Global Business Consulting',
     description:
       'Strategic consulting across Textile, Horeca, Cosmetics and E-commerce in 6 countries. First consultation free.',
     url: 'https://ladzolimited.com',
@@ -42,6 +60,7 @@ export const metadata: Metadata = {
     title: 'Ladzo Limited — Global Business Consulting',
     description: 'Strategic consulting across 6 countries. First consultation free.',
   },
+  alternates: { canonical: 'https://ladzolimited.com' },
 }
 
 export default function RootLayout({
@@ -49,8 +68,36 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'Ladzo Limited',
+    description:
+      'Strategic business consulting across Textile, Horeca, Cosmetics and E-commerce in 6 countries.',
+    url: 'https://ladzolimited.com',
+    telephone: '+447585367081',
+    email: 'office@ladzogroup.com',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Unit 6, 160 Eltham Hill',
+      addressLocality: 'London',
+      postalCode: 'SE9 5EA',
+      addressCountry: 'GB',
+    },
+    areaServed: ['GB', 'TR', 'RU', 'RO', 'MD', 'UA'],
+    knowsAbout: ['Textile Consulting', 'Horeca Consulting', 'Cosmetics Consulting', 'E-commerce Consulting'],
+    foundingDate: '2020',
+    numberOfEmployees: { '@type': 'QuantitativeValue', value: '10' },
+  }
+
   return (
     <html lang="en" className={`${playfair.variable} ${dmSans.variable} ${dmMono.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="antialiased">
         <Navbar />
         <main>{children}</main>
