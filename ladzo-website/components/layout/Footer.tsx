@@ -10,7 +10,7 @@ const navLinks = [
 ]
 
 export default function Footer() {
-  const year = new Date().getFullYear()
+  const year = 2020
 
   return (
     <footer className="bg-navy border-t border-gold/30">
