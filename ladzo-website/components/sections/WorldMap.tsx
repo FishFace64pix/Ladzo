@@ -6,15 +6,15 @@ import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps
 const GEO_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'
 
 // ISO 3166-1 numeric codes
-const HIGHLIGHTED = new Set(['826', '792', '643', '642', '498', '804'])
+const HIGHLIGHTED = new Set(['826', '792', '276', '642', '498', '233'])
 
 const markers: { name: string; note: string; coordinates: [number, number] }[] = [
   { name: 'United Kingdom', note: 'Headquarters', coordinates: [-2, 54] },
   { name: 'Turkey', note: 'Active Market', coordinates: [35, 39] },
-  { name: 'Russia', note: 'Active Market', coordinates: [55, 57] },
+  { name: 'Germany', note: 'Active Market', coordinates: [10, 51] },
   { name: 'Romania', note: 'Active Market', coordinates: [25, 46] },
   { name: 'Moldova', note: 'Active Market', coordinates: [28.5, 47.5] },
-  { name: 'Ukraine', note: 'Active Market', coordinates: [32, 49.5] },
+  { name: 'Estonia', note: 'Active Market', coordinates: [25, 58.5] },
 ]
 
 export default function WorldMapChart() {

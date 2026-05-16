@@ -29,10 +29,10 @@ const countries = [
       'A dynamic market bridging Europe and Asia. We support businesses looking to expand regionally or enter international markets.',
   },
   {
-    flag: '🇷🇺',
-    country: 'Russia',
+    flag: '🇩🇪',
+    country: 'Germany',
     activity:
-      'Established client relationships and ongoing advisory services across key business sectors for local and international companies.',
+      'One of Europe\'s largest economies. We support businesses entering or expanding within the German market across our core industries.',
   },
   {
     flag: '🇷🇴',
@@ -47,10 +47,10 @@ const countries = [
       'An emerging market with significant potential. We provide cross-border advisory and market development support for ambitious businesses.',
   },
   {
-    flag: '🇺🇦',
-    country: 'Ukraine',
+    flag: '🇪🇪',
+    country: 'Estonia',
     activity:
-      'Active consulting presence supporting local businesses with strategic guidance tailored to the regional commercial environment.',
+      'A digitally advanced economy and EU member state. We assist businesses leveraging Estonia\'s innovation-friendly environment for growth.',
   },
 ]
 

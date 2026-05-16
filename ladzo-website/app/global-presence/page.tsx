@@ -4,7 +4,7 @@ import GlobalPresenceClient from '@/components/pages/GlobalPresenceClient'
 export const metadata: Metadata = {
   title: 'Global Presence',
   description:
-    'Ladzo Limited operates across 6 countries: UK, Turkey, Russia, Romania, Moldova, and Ukraine. International consulting with local expertise in every market.',
+    'Ladzo Limited operates across 6 countries: UK, Turkey, Germany, Romania, Moldova, and Estonia. International consulting with local expertise in every market.',
   alternates: { canonical: 'https://ladzolimited.com/global-presence' },
   openGraph: {
     title: 'Global Presence | Ladzo Limited',

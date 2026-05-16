@@ -84,7 +84,7 @@ export default function RootLayout({
       postalCode: 'SE9 5EA',
       addressCountry: 'GB',
     },
-    areaServed: ['GB', 'TR', 'RU', 'RO', 'MD', 'UA'],
+    areaServed: ['GB', 'TR', 'DE', 'RO', 'MD', 'EE'],
     knowsAbout: ['Textile Consulting', 'Horeca Consulting', 'Cosmetics Consulting', 'E-commerce Consulting'],
     foundingDate: '2020',
     numberOfEmployees: { '@type': 'QuantitativeValue', value: '10' },

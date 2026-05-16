@@ -26,14 +26,14 @@ const timelineEntries = [
       'Expanded into Moldova during market liberalisation. Advised e-commerce startups on cross-border logistics and EU market entry strategies.',
   },
   {
-    country: '🇺🇦 Ukraine',
+    country: '🇩🇪 Germany',
     description:
-      'Established consulting relationships with Ukrainian Textile exporters and Horeca operators. Built supply chain resilience frameworks for volatile environments.',
+      'Expanded into one of Europe\'s largest economies. Supporting businesses across Textile, Horeca, and E-commerce sectors with market entry and growth strategies.',
   },
   {
-    country: '🇷🇺 Russia',
+    country: '🇪🇪 Estonia',
     description:
-      'Maintained consulting advisory services focused on Cosmetics regulatory compliance and E-commerce marketplace expansion for established client accounts.',
+      'Established presence in Estonia\'s innovation-driven market. Advising businesses on digital transformation and cross-border e-commerce within the EU.',
   },
 ]
 
