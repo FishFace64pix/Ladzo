@@ -13,7 +13,7 @@ export default function Footer() {
   const year = 2020
 
   return (
-    <footer className="bg-navy border-t border-gold/30">
+    <footer className="bg-navy border-t border-gold/30 pb-20 sm:pb-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
