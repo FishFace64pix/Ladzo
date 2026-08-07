@@ -111,10 +111,10 @@ export default function ContactClient() {
               <div className="flex flex-col gap-1">
                 <span className="font-mono text-xs uppercase tracking-widest text-gold">Phone</span>
                 <a
-                  href="tel:+447585367081"
+                  href="tel:+447392994771"
                   className="font-playfair text-2xl font-bold text-navy hover:text-gold transition-colors"
                 >
-                  +44 7585 367081
+                  +44 7392 994771
                 </a>
               </div>
 
@@ -211,7 +211,7 @@ export default function ContactClient() {
                       </div>
                       <div className="font-sans text-sm text-navy/60 bg-off-white p-4 rounded-sm w-full">
                         <p>Unit 6, 160 Eltham Hill, London SE9 5EA</p>
-                        <p>+44 7585 367081</p>
+                        <p>+44 7392 994771</p>
                       </div>
                       <button
                         onClick={() => setSubmitState('idle')}

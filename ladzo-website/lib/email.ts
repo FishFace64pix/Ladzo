@@ -90,7 +90,7 @@ export async function sendBookingEmails(payload: BookingPayload): Promise<void> 
             If you have any questions in the meantime, please don&apos;t hesitate to reach out:
           </p>
           <p style="color: #0A1628; font-weight: 600;">
-            📞 +44 7585 367081<br>
+            📞 +44 7392 994771<br>
             📍 Unit 6, 160 Eltham Hill, London SE9 5EA, United Kingdom
           </p>
           <p style="color: #6b7280; font-size: 14px; margin-top: 24px;">

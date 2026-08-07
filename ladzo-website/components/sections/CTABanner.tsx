@@ -44,7 +44,7 @@ export default function CTABanner() {
             </svg>
           </Link>
           <p className="font-sans text-xs text-silver-slate/60">
-            +44 7585 367081 · Unit 6, 160 Eltham Hill, London SE9 5EA
+            +44 7392 994771 · Unit 6, 160 Eltham Hill, London SE9 5EA
           </p>
         </motion.div>
       </div>

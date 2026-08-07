@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import FloatingCTA from '@/components/layout/FloatingCTA'
+import WhatsAppCTA from '@/components/layout/WhatsAppCTA'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -75,7 +76,7 @@ export default function RootLayout({
     description:
       'Strategic business consulting across Textile, Horeca, Cosmetics and E-commerce in 6 countries.',
     url: 'https://ladzolimited.com',
-    telephone: '+447585367081',
+    telephone: '+447392994771',
     email: 'office@ladzogroup.com',
     address: {
       '@type': 'PostalAddress',
@@ -103,6 +104,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <FloatingCTA />
+        <WhatsAppCTA />
       </body>
     </html>
   )

@@ -58,10 +58,10 @@ export default function Footer() {
               Contact
             </h3>
             <a
-              href="tel:+447585367081"
+              href="tel:+447392994771"
               className="font-sans text-sm text-silver-slate hover:text-white transition-colors duration-200"
             >
-              +44 7585 367081
+              +44 7392 994771
             </a>
             <address className="not-italic font-sans text-sm text-silver-slate leading-relaxed">
               Unit 6, 160 Eltham Hill<br />
