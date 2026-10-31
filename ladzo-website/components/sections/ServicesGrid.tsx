@@ -4,7 +4,7 @@ import ServiceCard from '@/components/ui/ServiceCard'
 const services = [
   {
     icon: '🧵',
-    title: 'Textile & Fashion',
+    title: 'Fashion & Clothing Retail',
     description:
       'Global supply chain optimisation, production consulting, and sourcing strategies that reduce cost while maintaining quality standards across international markets.',
   },

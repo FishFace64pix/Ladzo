@@ -3,6 +3,7 @@ import Hero from '@/components/sections/Hero'
 import StatsStrip from '@/components/sections/StatsStrip'
 import ServicesGrid from '@/components/sections/ServicesGrid'
 import GlobalTeaser from '@/components/sections/GlobalTeaser'
+import Partners from '@/components/sections/Partners'
 import CTABanner from '@/components/sections/CTABanner'
 
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ export default function HomePage() {
       <StatsStrip />
       <ServicesGrid />
       <GlobalTeaser />
+      <Partners />
       <CTABanner />
     </>
   )
