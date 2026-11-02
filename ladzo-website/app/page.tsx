@@ -9,11 +9,11 @@ import CTABanner from '@/components/sections/CTABanner'
 export const metadata: Metadata = {
   title: 'Ladzo Limited — Global Business Consulting',
   description:
-    'Strategic consulting across Textile, Horeca, Cosmetics and E-commerce in 6 countries. First consultation free.',
+    'Strategic consulting across Textile, Horeca, Cosmetics and E-commerce for UK and international clients. First consultation free.',
   openGraph: {
     title: 'Ladzo Limited — Empowering Global Growth',
     description:
-      'Strategic consulting across Textile, Horeca, Cosmetics and E-commerce in 6 countries. First consultation free.',
+      'Strategic consulting across Textile, Horeca, Cosmetics and E-commerce for UK and international clients. First consultation free.',
     url: 'https://ladzolimited.com',
     siteName: 'Ladzo Limited',
     locale: 'en_GB',

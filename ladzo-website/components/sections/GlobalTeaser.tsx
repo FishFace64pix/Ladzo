@@ -24,10 +24,10 @@ export default function GlobalTeaser() {
             <SectionHeader
               eyebrow="Global Presence"
               heading="Operating Across Europe & Beyond"
-              subtext="With active operations in 6 countries, Ladzo Limited connects local business talent with international opportunities, providing on-the-ground expertise where it matters most."
+              subtext="From our UK base, Ladzo Limited connects local business talent with international opportunities, providing on-the-ground expertise where it matters most."
             />
             <div className="flex flex-wrap gap-2 mt-2">
-              {['🇬🇧 UK', '🇹🇷 Turkey', '🇩🇪 Germany', '🇷🇴 Romania', '🇲🇩 Moldova', '🇪🇪 Estonia'].map(
+              {['🇬🇧 UK', '🇹🇷 Turkey', '🇩🇪 Germany', '🇲🇩 Moldova', '🇪🇪 Estonia'].map(
                 (c) => (
                   <span
                     key={c}

@@ -1,9 +1,9 @@
 import StatCard from '@/components/ui/StatCard'
 
 const stats = [
-  { value: '6', label: 'Countries' },
-  { value: '100+', label: 'Firms Served' },
+  { value: 'UK', label: 'Registered Company' },
   { value: '4', label: 'Industries' },
+  { value: '1st Hour', label: 'Free Consultation' },
 ]
 
 export default function StatsStrip() {

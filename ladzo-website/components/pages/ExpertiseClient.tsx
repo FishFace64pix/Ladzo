@@ -25,7 +25,7 @@ const services = [
     title: 'Horeca',
     eyebrow: 'Hospitality Operations',
     description:
-      'The hospitality sector demands precision in every detail — from menu engineering to procurement and staff training. Ladzo Limited brings operational consulting expertise built across Romanian, Turkish, and UK hospitality markets. We help hotels, restaurants, and catering operations reduce overhead, improve guest experience metrics, and build sustainable profitability.',
+      'The hospitality sector demands precision in every detail — from menu engineering to procurement and staff training. Ladzo Limited brings operational consulting expertise built across Turkish and UK hospitality markets. We help hotels, restaurants, and catering operations reduce overhead, improve guest experience metrics, and build sustainable profitability.',
     deliverables: [
       'Full operations audit with cost reduction action plan',
       'Staff training frameworks and performance KPI systems',

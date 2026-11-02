@@ -16,11 +16,6 @@ const timelineEntries = [
       'Launched Textile & Fashion consulting practice in Istanbul. Partnered with leading fabric manufacturers and fashion exporters to streamline European distribution.',
   },
   {
-    country: '🇷🇴 Romania',
-    description:
-      'Entered the Romanian market with Horeca and Cosmetics consulting. Supported 15+ hospitality brands with cost management and operational frameworks.',
-  },
-  {
     country: '🇲🇩 Moldova',
     description:
       'Expanded into Moldova during market liberalisation. Advised e-commerce startups on cross-border logistics and EU market entry strategies.',
@@ -106,15 +101,14 @@ export default function AboutClient() {
                 <p>
                   Ladzo Limited was founded with a singular purpose: to give businesses across
                   emerging and established markets access to the strategic insight that drives
-                  sustainable, international growth. Registered in the United Kingdom and operating
-                  across six countries, we combine London-calibre consulting with genuine on-the-ground
-                  presence.
+                  sustainable, international growth. Registered in the United Kingdom, we combine London-calibre consulting with a genuine
+                  understanding of international markets.
                 </p>
                 <p>
-                  Our journey began in the United Kingdom before expanding across Turkey, Romania,
-                  Moldova, Ukraine, and Russia — regions where opportunity and complexity exist in equal
-                  measure. Across these markets, we have partnered with over 100 firms spanning Textile
-                  & Fashion, Horeca, Cosmetics, and E-commerce.
+                  Our journey began in the United Kingdom, and our work connects with markets such as
+                  Turkey, Germany, Moldova, and Estonia — regions where opportunity and complexity exist
+                  in equal measure. We support businesses across Textile & Fashion, Horeca, Cosmetics,
+                  and E-commerce.
                 </p>
                 <p>
                   What sets us apart is not just our network, but our philosophy: every engagement is
@@ -125,9 +119,9 @@ export default function AboutClient() {
               <div className="grid grid-cols-2 gap-4 mt-4">
                 {[
                   { value: '6+', label: 'Years Active' },
-                  { value: '100+', label: 'Firms Served' },
-                  { value: '6', label: 'Countries' },
                   { value: '4', label: 'Industries' },
+                  { value: 'UK', label: 'Registered' },
+                  { value: 'Free', label: 'First Consultation' },
                 ].map((stat) => (
                   <div key={stat.label} className="bg-white border border-navy/10 p-4 rounded-sm">
                     <p className="font-playfair text-3xl font-bold text-gold">{stat.value}</p>

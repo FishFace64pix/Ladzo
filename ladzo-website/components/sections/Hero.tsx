@@ -67,7 +67,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="font-sans text-lg md:text-xl text-silver-slate leading-relaxed mb-10 max-w-xl"
           >
-            Strategic consulting across 6 countries, 100+ firms. We bridge local expertise with
+            UK-registered strategic consulting. We bridge local expertise with
             global markets across Textile, Horeca, Cosmetics, and E-commerce.
           </motion.p>
 

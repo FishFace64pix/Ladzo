@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     template: '%s | Ladzo Limited',
   },
   description:
-    'Strategic business consulting across Textile, Horeca, Cosmetics and E-commerce. Operating in 6 countries. First consultation free.',
+    'Strategic business consulting across Textile, Horeca, Cosmetics and E-commerce. First consultation free.',
   keywords: [
     'business consulting',
     'global consulting',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Ladzo Limited — Global Business Consulting',
     description:
-      'Strategic consulting across Textile, Horeca, Cosmetics and E-commerce in 6 countries. First consultation free.',
+      'Strategic consulting across Textile, Horeca, Cosmetics and E-commerce for UK and international clients. First consultation free.',
     url: 'https://ladzolimited.com',
     siteName: 'Ladzo Limited',
     locale: 'en_GB',
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Ladzo Limited — Global Business Consulting',
-    description: 'Strategic consulting across 6 countries. First consultation free.',
+    description: 'UK-registered strategic business consulting. First consultation free.',
   },
   alternates: { canonical: 'https://ladzolimited.com' },
 }
@@ -74,7 +74,7 @@ export default function RootLayout({
     '@type': 'LocalBusiness',
     name: 'Ladzo Limited',
     description:
-      'Strategic business consulting across Textile, Horeca, Cosmetics and E-commerce in 6 countries.',
+      'Strategic business consulting across Textile, Horeca, Cosmetics and E-commerce.',
     url: 'https://ladzolimited.com',
     telephone: '+447392994771',
     email: 'office@ladzogroup.com',

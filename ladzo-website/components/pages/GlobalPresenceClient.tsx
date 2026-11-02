@@ -35,12 +35,6 @@ const countries = [
       'One of Europe\'s largest economies. We support businesses entering or expanding within the German market across our core industries.',
   },
   {
-    flag: '🇷🇴',
-    country: 'Romania',
-    activity:
-      'A fast-growing economy offering strong opportunities. We guide businesses through market entry, operations, and growth strategies.',
-  },
-  {
     flag: '🇲🇩',
     country: 'Moldova',
     activity:
@@ -81,7 +75,7 @@ export default function GlobalPresenceClient() {
               <span className="text-gold">Presence</span>
             </h1>
             <p className="font-sans text-lg text-silver-slate mt-6 max-w-xl">
-              Six countries. One consistent standard of excellence. Ladzo Limited operates where
+              One consistent standard of excellence. Ladzo Limited works where
               opportunity and ambition meet.
             </p>
           </motion.div>
@@ -93,9 +87,9 @@ export default function GlobalPresenceClient() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <SectionHeader
-              eyebrow="6 Countries"
+              eyebrow="Our Markets"
               heading="Our Operating Markets"
-              subtext="Active consulting presence across Europe. Hover a pin to see each market."
+              subtext="Markets where we support our clients. Hover a pin to see each market."
               centered
             />
           </div>

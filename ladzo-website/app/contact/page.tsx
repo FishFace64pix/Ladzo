@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Book a Free Consultation | Ladzo Limited',
     description:
-      'Get in touch with Ladzo Limited. First hour is always free. Operating across 6 countries in Textile, Horeca, Cosmetics and E-commerce.',
+      'Get in touch with Ladzo Limited. First hour is always free. Consulting in Textile, Horeca, Cosmetics and E-commerce.',
     url: 'https://ladzolimited.com/contact',
     type: 'website',
   },

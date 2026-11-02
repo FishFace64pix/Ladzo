@@ -136,7 +136,7 @@ export default function ContactClient() {
                 {[
                   '✓ No obligation — first hour is free',
                   '✓ Registered in England & Wales',
-                  '✓ Active in 6 countries',
+                  '✓ Serving UK and international clients',
                   '✓ Response within 24 hours',
                 ].map((item) => (
                   <p key={item} className="font-sans text-sm text-navy/80 flex items-start gap-2">

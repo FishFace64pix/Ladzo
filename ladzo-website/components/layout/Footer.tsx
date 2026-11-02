@@ -31,7 +31,7 @@ export default function Footer() {
               Empowering Global Growth
             </p>
             <p className="font-sans text-sm text-silver-slate leading-relaxed max-w-xs">
-              Strategic business consulting across 6 countries and 100+ firms in Textile, Horeca,
+              UK-registered strategic business consulting in Textile, Horeca,
               Cosmetics, and E-commerce.
             </p>
           </div>
