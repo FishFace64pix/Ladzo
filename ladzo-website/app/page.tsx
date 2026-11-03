@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Hero from '@/components/sections/Hero'
 import StatsStrip from '@/components/sections/StatsStrip'
-import ServicesGrid from '@/components/sections/ServicesGrid'
+import ScopeOfServices from '@/components/sections/ScopeOfServices'
 import GlobalTeaser from '@/components/sections/GlobalTeaser'
 import Partners from '@/components/sections/Partners'
 import CTABanner from '@/components/sections/CTABanner'
@@ -26,7 +26,7 @@ export default function HomePage() {
     <>
       <Hero />
       <StatsStrip />
-      <ServicesGrid />
+      <ScopeOfServices />
       <GlobalTeaser />
       <Partners />
       <CTABanner />
