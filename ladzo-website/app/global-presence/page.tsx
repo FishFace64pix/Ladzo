@@ -4,7 +4,7 @@ import GlobalPresenceClient from '@/components/pages/GlobalPresenceClient'
 export const metadata: Metadata = {
   title: 'Global Presence',
   description:
-    'Ladzo Limited is headquartered in the UK and supports businesses connected to Turkey, Germany, Moldova and Estonia. International consulting with local expertise in every market.',
+    'Ladzo Limited is a UK-headquartered consultancy providing domestic and international business consulting.',
   alternates: { canonical: 'https://ladzolimited.com/global-presence' },
   openGraph: {
     title: 'Global Presence | Ladzo Limited',

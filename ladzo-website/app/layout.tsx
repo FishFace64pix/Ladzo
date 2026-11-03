@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     'cosmetics consulting',
     'e-commerce consulting',
     'UK consulting firm',
-    'Eastern Europe business',
+    'International business consulting',
     'international market entry',
     'Ladzo Limited',
   ],

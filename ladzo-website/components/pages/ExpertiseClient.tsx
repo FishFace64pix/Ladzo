@@ -12,7 +12,7 @@ const services = [
     title: 'Textile & Fashion',
     eyebrow: 'Supply Chain Excellence',
     description:
-      'Our Textile & Fashion practice helps brands and manufacturers navigate the complexities of global sourcing, production optimisation, and market positioning. With deep networks across Turkey, Eastern Europe, and the UK, we deliver strategies that reduce cost, improve quality, and accelerate time-to-market for fashion businesses at every stage.',
+      'Our Textile & Fashion practice helps brands and manufacturers navigate the complexities of global sourcing, production optimisation, and market positioning. With strong domestic and international networks, we deliver strategies that reduce cost, improve quality, and accelerate time-to-market for fashion businesses at every stage.',
     deliverables: [
       'Global supply chain audit and optimisation roadmap',
       'Supplier qualification and sourcing network development',
@@ -25,7 +25,7 @@ const services = [
     title: 'Horeca',
     eyebrow: 'Hospitality Operations',
     description:
-      'The hospitality sector demands precision in every detail — from menu engineering to procurement and staff training. Ladzo Limited brings operational consulting expertise built across Turkish and UK hospitality markets. We help hotels, restaurants, and catering operations reduce overhead, improve guest experience metrics, and build sustainable profitability.',
+      'The hospitality sector demands precision in every detail — from menu engineering to procurement and staff training. Ladzo Limited brings operational consulting expertise built across domestic and international hospitality markets. We help hotels, restaurants, and catering operations reduce overhead, improve guest experience metrics, and build sustainable profitability.',
     deliverables: [
       'Full operations audit with cost reduction action plan',
       'Staff training frameworks and performance KPI systems',
@@ -38,7 +38,7 @@ const services = [
     title: 'Cosmetics',
     eyebrow: 'Regulatory & Market Entry',
     description:
-      'Entering new cosmetics markets requires navigating complex regulatory landscapes, building distributor relationships, and positioning brands to resonate with local consumers. Our team combines EU and UK regulatory expertise with Eastern European market knowledge to create compliant, commercially viable market entry plans for cosmetics and personal care brands.',
+      'Entering new cosmetics markets requires navigating complex regulatory landscapes, building distributor relationships, and positioning brands to resonate with local consumers. Our team combines EU and UK regulatory expertise with international market knowledge to create compliant, commercially viable market entry plans for cosmetics and personal care brands.',
     deliverables: [
       'EU/UK regulatory compliance review and CPNP registration support',
       'Distributor network identification and negotiation',
@@ -163,49 +163,6 @@ export default function ExpertiseClient() {
             </motion.div>
           </AnimatePresence>
 
-          <div className="mt-20">
-            <SectionHeader
-              eyebrow="Full Overview"
-              heading="All Four Disciplines"
-              subtext="A snapshot of every area where Ladzo Limited delivers measurable impact."
-            />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
-              {services.map((s, i) => (
-                <motion.div
-                  key={s.id}
-                  initial={{ opacity: 0, y: 24 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: '-40px' }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
-                  onClick={() => {
-                    setActive(s.id)
-                    window.scrollTo({ top: 0, behavior: 'smooth' })
-                  }}
-                  className="bg-white border border-navy/10 rounded-sm p-7 cursor-pointer hover:border-gold hover:shadow-lg transition-all duration-300 group border-l-4 border-l-transparent hover:border-l-gold"
-                >
-                  <div className="flex items-start gap-4">
-                    <span className="text-3xl">{s.icon}</span>
-                    <div>
-                      <span className="font-mono text-xs uppercase tracking-widest text-gold mb-1 block">
-                        {s.eyebrow}
-                      </span>
-                      <h3 className="font-playfair text-xl font-bold text-navy mb-2 group-hover:text-gold transition-colors">
-                        {s.title}
-                      </h3>
-                      <ul className="flex flex-col gap-1.5">
-                        {s.deliverables.map((d, j) => (
-                          <li key={j} className="font-sans text-xs text-silver-slate flex items-start gap-2">
-                            <span className="text-gold mt-0.5">·</span>
-                            {d}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 

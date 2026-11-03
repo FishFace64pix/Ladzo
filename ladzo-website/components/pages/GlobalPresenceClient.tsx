@@ -17,34 +17,16 @@ const WorldMapChart = dynamic(() => import('@/components/sections/WorldMap'), {
 
 const countries = [
   {
-    flag: '🇬🇧',
-    country: 'United Kingdom',
+    flag: '🏢',
+    country: 'Domestic — United Kingdom',
     activity:
-      'Our registered headquarters. We serve clients across all four industries from our London base, providing international-standard consulting expertise.',
+      'Our registered headquarters. We support UK businesses across all four industries with management, market research and operational consulting.',
   },
   {
-    flag: '🇹🇷',
-    country: 'Turkey',
+    flag: '🌍',
+    country: 'International',
     activity:
-      'A dynamic market bridging Europe and Asia. We support businesses looking to expand regionally or enter international markets.',
-  },
-  {
-    flag: '🇩🇪',
-    country: 'Germany',
-    activity:
-      'One of Europe\'s largest economies. We support businesses entering or expanding within the German market across our core industries.',
-  },
-  {
-    flag: '🇲🇩',
-    country: 'Moldova',
-    activity:
-      'An emerging market with significant potential. We provide cross-border advisory and market development support for ambitious businesses.',
-  },
-  {
-    flag: '🇪🇪',
-    country: 'Estonia',
-    activity:
-      'A digitally advanced economy and EU member state. We assist businesses leveraging Estonia\'s innovation-friendly environment for growth.',
+      'From our UK base, we advise clients abroad and businesses expanding across borders, with the same consistent standard of strategic support.',
   },
 ]
 
@@ -87,9 +69,9 @@ export default function GlobalPresenceClient() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <SectionHeader
-              eyebrow="Our Markets"
-              heading="Our Operating Markets"
-              subtext="Markets where we support our clients. Hover a pin to see each market."
+              eyebrow="Where We Work"
+              heading="UK Based, Global Reach"
+              subtext="Headquartered in the United Kingdom, we advise clients both domestically and internationally."
               centered
             />
           </div>
@@ -104,7 +86,7 @@ export default function GlobalPresenceClient() {
             <WorldMapChart />
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {countries.map((c, i) => (
               <CountryCard
                 key={c.country}

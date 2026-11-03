@@ -1,47 +1,47 @@
 'use client'
 
-import { useState } from 'react'
-import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps'
+import { ComposableMap, Geographies, Geography, Line, Marker } from 'react-simple-maps'
 
 const GEO_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'
 
-// ISO 3166-1 numeric codes
-const HIGHLIGHTED = new Set(['826', '792', '276', '498', '233'])
+// ISO 3166-1 numeric code for the United Kingdom
+const HQ_ID = '826'
+const HQ: [number, number] = [-0.1, 51.5]
 
-const markers: { name: string; note: string; coordinates: [number, number] }[] = [
-  { name: 'United Kingdom', note: 'Headquarters', coordinates: [-2, 54] },
-  { name: 'Turkey', note: 'Active Market', coordinates: [35, 39] },
-  { name: 'Germany', note: 'Active Market', coordinates: [10, 51] },
-  { name: 'Moldova', note: 'Active Market', coordinates: [28.5, 47.5] },
-  { name: 'Estonia', note: 'Active Market', coordinates: [25, 58.5] },
+// Unlabelled endpoints that illustrate global reach
+const reach: [number, number][] = [
+  [-74, 40.7],
+  [-46.6, -23.5],
+  [55.3, 25.2],
+  [28, -26.2],
+  [77.2, 28.6],
+  [103.8, 1.35],
+  [151.2, -33.9],
 ]
 
 export default function WorldMapChart() {
-  const [hovered, setHovered] = useState<string | null>(null)
-  const active = markers.find((m) => m.name === hovered)
-
   return (
     <div className="relative bg-navy/5 border border-navy/10 rounded-sm overflow-hidden">
       <ComposableMap
-        projection="geoMercator"
-        projectionConfig={{ center: [22, 54], scale: 560 }}
-        viewBox="0 0 800 500"
+        projection="geoEqualEarth"
+        projectionConfig={{ scale: 160 }}
+        viewBox="0 0 800 420"
         style={{ width: '100%', height: 'auto' }}
       >
         <Geographies geography={GEO_URL}>
           {({ geographies }) =>
             geographies.map((geo) => {
-              const isHighlighted = HIGHLIGHTED.has(String(geo.id))
+              const isHQ = String(geo.id) === HQ_ID
               return (
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
-                  fill={isHighlighted ? '#C9A84C' : '#D1CAB8'}
+                  fill={isHQ ? '#C9A84C' : '#D1CAB8'}
                   stroke="#F5F3EE"
-                  strokeWidth={0.5}
+                  strokeWidth={0.4}
                   style={{
-                    default: { outline: 'none', opacity: isHighlighted ? 1 : 0.45 },
-                    hover: { outline: 'none', opacity: isHighlighted ? 0.8 : 0.5 },
+                    default: { outline: 'none', opacity: isHQ ? 1 : 0.45 },
+                    hover: { outline: 'none', opacity: isHQ ? 1 : 0.45 },
                     pressed: { outline: 'none' },
                   }}
                 />
@@ -50,34 +50,36 @@ export default function WorldMapChart() {
           }
         </Geographies>
 
-        {markers.map((m) => (
-          <Marker
-            key={m.name}
-            coordinates={m.coordinates}
-            onMouseEnter={() => setHovered(m.name)}
-            onMouseLeave={() => setHovered(null)}
-          >
-            <circle
-              r={hovered === m.name ? 7 : 5}
-              fill="#0A1628"
-              stroke="#C9A84C"
-              strokeWidth={1.5}
-              style={{ cursor: 'pointer', transition: 'r 0.15s ease' }}
-            />
+        {reach.map((to) => (
+          <Line
+            key={to.join(',')}
+            from={HQ}
+            to={to}
+            stroke="#C9A84C"
+            strokeWidth={1}
+            strokeLinecap="round"
+            strokeDasharray="3 4"
+            strokeOpacity={0.7}
+          />
+        ))}
+
+        {reach.map((to) => (
+          <Marker key={`dot-${to.join(',')}`} coordinates={to}>
+            <circle r={2.5} fill="#C9A84C" opacity={0.8} />
           </Marker>
         ))}
+
+        <Marker coordinates={HQ}>
+          <circle r={12} fill="#C9A84C" opacity={0.2}>
+            <animate attributeName="r" values="6;16;6" dur="3s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.35;0;0.35" dur="3s" repeatCount="indefinite" />
+          </circle>
+          <circle r={5} fill="#0A1628" stroke="#C9A84C" strokeWidth={1.5} />
+        </Marker>
       </ComposableMap>
 
-      {/* Tooltip */}
-      {active && (
-        <div className="absolute bottom-4 left-4 bg-navy text-white px-4 py-2.5 rounded-sm shadow-xl border border-gold/30 pointer-events-none">
-          <p className="font-playfair font-bold text-sm text-white">{active.name}</p>
-          <p className="font-mono text-xs text-gold uppercase tracking-widest mt-0.5">{active.note}</p>
-        </div>
-      )}
-
       <p className="font-mono text-xs uppercase tracking-widest text-silver-slate text-center py-3 border-t border-navy/10">
-        Hover country pins for details · Gold = Active Markets
+        UK Headquarters · Domestic &amp; International Consulting
       </p>
     </div>
   )

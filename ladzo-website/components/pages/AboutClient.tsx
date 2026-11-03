@@ -4,34 +4,6 @@ import { motion } from 'framer-motion'
 import SectionHeader from '@/components/ui/SectionHeader'
 import CTABanner from '@/components/sections/CTABanner'
 
-const timelineEntries = [
-  {
-    country: '🇬🇧 United Kingdom',
-    description:
-      'Incorporated in London. Established operational headquarters at Unit 6, 160 Eltham Hill, SE9 5EA. Built initial client roster across Textile and E-commerce sectors.',
-  },
-  {
-    country: '🇹🇷 Turkey',
-    description:
-      'Launched Textile & Fashion consulting practice in Istanbul. Partnered with leading fabric manufacturers and fashion exporters to streamline European distribution.',
-  },
-  {
-    country: '🇲🇩 Moldova',
-    description:
-      'Expanded into Moldova during market liberalisation. Advised e-commerce startups on cross-border logistics and EU market entry strategies.',
-  },
-  {
-    country: '🇩🇪 Germany',
-    description:
-      'Expanded into one of Europe\'s largest economies. Supporting businesses across Textile, Horeca, and E-commerce sectors with market entry and growth strategies.',
-  },
-  {
-    country: '🇪🇪 Estonia',
-    description:
-      'Established presence in Estonia\'s innovation-driven market. Advising businesses on digital transformation and cross-border e-commerce within the EU.',
-  },
-]
-
 export default function AboutClient() {
   return (
     <>
@@ -105,9 +77,8 @@ export default function AboutClient() {
                   understanding of international markets.
                 </p>
                 <p>
-                  Our journey began in the United Kingdom, and our work connects with markets such as
-                  Turkey, Germany, Moldova, and Estonia — regions where opportunity and complexity exist
-                  in equal measure. We support businesses across Textile & Fashion, Horeca, Cosmetics,
+                  Our journey began in the United Kingdom. From our UK headquarters, we advise clients
+                  both domestically and internationally across Textile & Fashion, Horeca, Cosmetics,
                   and E-commerce.
                 </p>
                 <p>
@@ -174,41 +145,6 @@ export default function AboutClient() {
                 </p>
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Country Timeline */}
-      <section className="bg-off-white py-20 border-t border-navy/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12">
-            <SectionHeader
-              eyebrow="Our Expansion"
-              heading="A Timeline of Global Growth"
-              subtext="How Ladzo Limited built its presence across Europe, one country at a time."
-            />
-          </div>
-          <div className="overflow-x-auto scrollbar-hide pb-6">
-            <div className="flex gap-6 min-w-max">
-              {timelineEntries.map((entry, i) => (
-                <motion.div
-                  key={entry.country}
-                  initial={{ opacity: 0, x: 24 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: '-40px' }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="w-72 flex-shrink-0 bg-white border border-navy/10 rounded-sm p-6 relative"
-                >
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gold rounded-t-sm opacity-60" />
-                  <h3 className="font-playfair text-lg font-bold text-navy mb-3">
-                    {entry.country}
-                  </h3>
-                  <p className="font-sans text-sm text-silver-slate leading-relaxed">
-                    {entry.description}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
