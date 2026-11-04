@@ -2,7 +2,6 @@ import StatCard from '@/components/ui/StatCard'
 
 const stats = [
   { value: 'UK', label: 'Registered Company' },
-  { value: '4', label: 'Industries' },
   { value: '1st Hour', label: 'Free Consultation' },
 ]
 

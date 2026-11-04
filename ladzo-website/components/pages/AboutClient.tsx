@@ -87,10 +87,9 @@ export default function AboutClient() {
                   cultural nuances that determine success across borders.
                 </p>
               </div>
-              <div className="grid grid-cols-2 gap-4 mt-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
                 {[
                   { value: '6+', label: 'Years Active' },
-                  { value: '4', label: 'Industries' },
                   { value: 'UK', label: 'Registered' },
                   { value: 'Free', label: 'First Consultation' },
                 ].map((stat) => (
